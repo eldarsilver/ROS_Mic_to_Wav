@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+
+<launch>
+  <node name="mic2wav" pkg="mic2wav" type="mic2wav.py" output="screen">
+    <rosparam command="load" file="$(find mic2wav)/launch/mic2wav_params.yaml"/>
+  </node>
+</launch>

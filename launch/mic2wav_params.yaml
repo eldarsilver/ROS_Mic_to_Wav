@@ -1,0 +1,19 @@
+# Set the number of iterations after which the sound will be dumped into a WAV file
+max_iter: 31
+
+# File path to store the raw, WAV and downsampled WAV files.
+# Raw and WAV will be deleted so only downsampled WAV will remain.
+sound_path: "/home/datahack/Documents/VOICE_DATASET/"
+
+# Number of channels for the desired conversion.
+dest_num_channels: "1"
+
+# Rate for the desired conversion.
+dest_rate: "16000"
+
+# The topic where the AIDA publishes the raw audio it captures.
+raw_audio_topic: "/pepper_robot/audio"
+
+# Set the topic where AIDA is going to write the intent related to the input msg
+wav_topic: "/pepper_utils/wav_names"
+
